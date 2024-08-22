@@ -1,0 +1,6 @@
+name: DOS
+version: 1.0.0
+main: arrachh\Loader
+api: 5.0.0
+author: arrachh
+description: "Detect All Device OS Spoofing"
