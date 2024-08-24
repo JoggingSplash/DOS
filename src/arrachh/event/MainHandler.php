@@ -23,8 +23,8 @@ final class MainHandler implements Listener, Variables {
         $titleId = $player->getPlayerInfo()->getExtraData()['TitleID'];
         $deviceOS = $player->getPlayerInfo()->getExtraData()['DeviceOS'];
 
-        if($titleId === null) {
-            //this should not be null if the player is logged into xbl.
+        if($titleId === null || empty($titleId)) {
+            //this should not be null or empty if the player is logged into xbl.
             return;
         }
 
