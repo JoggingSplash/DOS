@@ -64,7 +64,7 @@ final class MainHandler implements Listener, Variables {
                     ->setDescription('Player: ' . $event->getPlayer()->getName())
                 )
             );
-        $this->loader->getServer()->broadcastMessage(TextFormat::colorize('» &r&c[Nyx] ' . $player->getName() . ' was caught trying to join with Lunar Proxy spoofer. ' . 'Device: ' . $deviceOs . ' Expected: ' . $expectedDevice));
+        $this->loader->getServer()->broadcastMessage(TextFormat::colorize('» &r&c[Nyx] ' . $player->getName() . ' was caught trying to join with some kind of spoofer. ' . 'Device: ' . $deviceOs . ' Expected: ' . $expectedDevice));
         $player->kick('You cant join using any type of Device Modifiers', false);
     }
 }
